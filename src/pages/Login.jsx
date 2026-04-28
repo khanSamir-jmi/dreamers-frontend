@@ -17,7 +17,7 @@ const Login = () => {
     const toastId = toast.loading('Logging in...');
 
     try {
-      const { data } = await axios.post('http://localhost:5000/api/users/login', {
+      const { data } = await axios.post('https://dreamers-backend-i25f.onrender.com/api/users/login', {
         email: email.toLowerCase(), // Ensure email is lowercase
         password,
       });
